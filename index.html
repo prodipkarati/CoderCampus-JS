@@ -6,7 +6,171 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 3px;
+}
+body{
+    max-width: 1000px;
+    margin: auto;
+    counter-reset: pro;
+    background-image: linear-gradient(#ffffff, #e2eeee);
+    background-attachment: fixed;
+}
+h2{
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid hotpink;
+}
+h4{
+    margin-top: 30px;
+    color: rgb(44, 29, 95);
+    
+}
+h2::before{
+    counter-increment: pro;
+    content: "No-" counter(pro) ":" " ";
+}
+
+h2{
+    counter-reset: subpro;
+}
+h3::before{
+    counter-increment: subpro;
+    content: counter(pro) "." counter(subpro) " ";
+}
+h3{
+    color: rgb(255, 32, 144);
+    margin-top: 25px;
+}
+b{  
+    color: #ff5959;
+    background-color: rgb(255, 255, 255);
+    border-radius: 45%;
+    padding: 0 10px 0 10px;
+}
+.pre:hover b{
+    color: #ffffff;
+    background-color: #ff5959;
+    border-radius: 45%;
+    padding: 0 10px 0 10px;
+    font-weight: bold; 
+}
+.pro::before{
+    content: "Note:- ";
+    color: red;
+    font-weight: bold;
+    margin-right: 3px;
+    padding-left: 7px;
+}
+.pro{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: rgb(100, 99, 99);
+    word-break: break-all;
+    border: 1px solid rgba(148, 147, 147, 0.28);
+    padding: 3px;
+    display: block;
+    font-size: 15px;
+    display: inline-table;
+}
+
+
+
+.dip::before{
+    content: "Output: ";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: lightseagreen;
+    padding: 3px 5px 3px 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: block;
+    text-align: left;
+}
+.dip{
+    margin-top: 10px;
+    color: white;
+    background-color: darkslategrey;
+    max-width: fit-content;
+    padding: 0 0 3px 0;
+    border-radius: 5px;
+    word-break: break-all;
+    letter-spacing: 1pt;
+}
+
+#span2{
+    color: #58ad2e;
+    font-weight: bolder;
+}
+
+.pre{
+    font-size: 14px;
+    overflow: hidden;
+    display: block;
+    margin-top: 10px;
+    line-height: 21px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    position: static;
+    padding: 10px 10px 0 10px;
+    max-width: 1000px;
+    border: 1px solid #ccc;
+    transition: box-shadow .3s;
+}
+.pre:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); 
+    transform: translateY(0.4px);
+    overflow: auto;
+    cursor: auto;
+}
+.pre::before{
+    content: "Syntax:";
+    display: block;
+    background-color: rgb(255, 255, 255);
+    color: rgb(180, 180, 180);
+    padding-left: 5px;
+    border-radius: 0 0 0 11px ;
+    margin-bottom: 10px;
+}
+
+.w{
+    margin-left: 7px;
+    margin-right: 7px;
+    background-color: #ffc0c7;
+    padding: 6px;
+    border-radius: 4px;
+    transition: box-shadow .5s;
+    display: block;
+}
+
+.dis{
+    margin-top: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    color: rgb(53, 46, 46);
+}
+h5{
+    color: red;
+    margin-top: 15px;
+}
+details{
+    color: #e2eeee;
+    background-color: teal;
+    padding: 2px 4px 2px 4px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    letter-spacing: 1pt;
+}
+details:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+    </style>
 </head>
 <body>
     <h2>JS Statements</h2>
@@ -1452,7 +1616,7 @@ Use pop() or shift() instead.</p>
     &#60;/script>
 <p class="pro">This example slices out a part of an array element 1 ("Orange")</p>
 </pre>
-
+sdesxd 
 
 </body>
 </html> 
